@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jay.wechat.dao.ProductInfoDao">
+    <insert id="insertProductInfo" parameterType="ProductInfo">
+        INSERT INTO product_info (product_id,product_name,product_price,product_stock,product_description,product_icon,product_status,category_type) VALUES (#{product_id},#{product_name},#{product_price},#{product_stock},#{product_description},#{product_icon},#{product_status},#{category_type})
+    </insert>
+
+    <!-- 根据商品状态查找商品 -->
+    <select id="findByProductStatus" resultType="ProductInfo">
+        SELECT * FROM  product_info WHERE product_status=#{product_status}
+    </select>
+
+    <!-- 根据商品id查找商品 -->
+    <select id="findOne" resultType="ProductInfo">
+        SELECT * FROM product_info WHERE product_id=#{product_id}
+    </select>
+
+    <!--  更新商品库存 -->
+    <update id="updateStock" parameterType="ProductInfo">
+        UPDATE product_info SET product_stock=#{product_stock} WHERE product_id=#{product_id}
+    </update>
+</mapper>
