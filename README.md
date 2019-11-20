@@ -1,5 +1,5 @@
 # springboot-wechat-order
-springboot整合ssm的企业微信点餐系统需求文档，统一接口
+springboot整合ssm的企业微信点餐系统需求文档，统一开发接口
 # API
 
 ###商品列表
