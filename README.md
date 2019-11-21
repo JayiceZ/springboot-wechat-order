@@ -81,7 +81,10 @@ java.io.EOFException: null
 目前该问题尚未解决（但是迟早是会解决滴）
 
 ## 4.版本控制
-1.0.0：<https://github.com/1185430411/springboot-wechat-order/tree/master/STEP4/wechat>
+1.0.1：<https://github.com/1185430411/springboot-wechat-order/tree/master/STEP1/wechat>
+1.0.2（新增微信支付功能）：<https://github.com/1185430411/springboot-wechat-order/tree/master/STEP2/wechat>
+1.0.3（新增后台管理扫码登录，AOP进行权限校验等功能）：<https://github.com/1185430411/springboot-wechat-order/tree/master/STEP3/wechat>
+2.0.1（新增前后端实时通信功能:买家下单，卖家端音乐提醒）：<https://github.com/1185430411/springboot-wechat-order/tree/master/STEP4/wechat>
 
 ## 5.作者
 JAYICE 华南理工大学
