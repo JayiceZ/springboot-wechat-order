@@ -80,7 +80,7 @@ java.io.EOFException: null
 查找后可能是因为springboot内置tomcat和WebSocket有冲突的原因
 目前该问题尚未解决（但是迟早是会解决滴）
 
-## 4.版本控制
+## 5.版本控制
 1.0.1：<https://github.com/1185430411/springboot-wechat-order/tree/master/STEP1/wechat>
 
 1.0.2（新增微信支付功能）：<https://github.com/1185430411/springboot-wechat-order/tree/master/STEP2/wechat>
@@ -91,5 +91,5 @@ java.io.EOFException: null
 
 3.0.1（增用redis缓存，redis分布式锁。完善高并发场景下可能会出现的BUG，并提高响应性能。虽然这小破玩意基本不会有高并发场景（逃））:开发中.......
 
-## 5.作者
+## 6.作者
 JAYICE 华南理工大学
