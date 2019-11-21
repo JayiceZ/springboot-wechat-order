@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jay.wechat.dao.SellerInfoDao">
+    <select id="findByOpenid" resultType="SellerInfo">
+        SELECT * FROM seller_info WHERE openid = #{openid_id}
+    </select>
+
+    <insert id="addNewSeller" parameterType="SellerInfo">
+        INSERT INTO seller_info (seller_id,user_name,password,openid) VALUES (#{seller_id},#{user_name},#{password},#{openid})
+    </insert>
+</mapper>

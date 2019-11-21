@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jay.wechat.dao.OrderMasterDao">
+    <!-- 根据微信号获取该人的所有订单(分页) -->
+    <select id="findByBuyerOpenid" resultType="OrderMaster">
+        SELECT * FROM order_master WHERE buyer_openid=#{buyer_openid} LIMIT #{start},#{len}
+    </select>
+
+    <!-- 新增订单 -->
+    <insert id="insertNewOrder" parameterType="OrderMaster">
+        INSERT INTO order_master (order_id,buyer_name,buyer_phone,buyer_address,buyer_openid,order_amount) VALUES (#{order_id},#{buyer_name},#{buyer_phone},#{buyer_address},#{buyer_openid},#{order_amount})
+    </insert>
+
+    <!-- 查询单个订单 -->
+    <select id="findOne" resultType="OrderMaster">
+        SELECT * FROM order_master WHERE order_id = #{order_id}
+    </select>
+
+    <!-- 修改订单状态 -->
+    <update id="updateOrderStatus" parameterType="OrderMaster">
+        UPDATE order_master SET order_status =#{order_status} WHERE order_id=#{order_id}
+    </update>
+
+    <!-- 修改支付状态 -->
+    <update id="updatePayStatus" parameterType="OrderMaster">
+        UPDATE order_master SET pay_status = #{pay_status} WHERE order_id =#{order_id}
+    </update>
+
+    <!-- 查询所有订单 -->
+    <select id="findAll" resultType="OrderMaster">
+        SELECT * FROM order_master LIMIT #{start},#{len}
+    </select>
+</mapper>
