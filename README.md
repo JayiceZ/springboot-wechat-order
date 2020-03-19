@@ -89,7 +89,7 @@ java.io.EOFException: null
 
 2.0.1（新增前后端实时通信功能:买家下单，卖家端音乐提醒）：<https://github.com/1185430411/springboot-wechat-order/tree/master/STEP4/wechat>
 
-3.0.1（增用redis缓存，redis分布式锁。完善高并发场景下可能会出现的BUG，并提高响应性能。虽然这小破玩意基本不会有高并发场景（逃））:开发中.......
+3.0.1（增用redis缓存，redis分布式锁。完善高并发场景下可能会出现的BUG，并提高响应性能。）:开发中.......
 
 ## 6.作者
 JAYICE 华南理工大学
