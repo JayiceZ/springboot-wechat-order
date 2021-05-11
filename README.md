@@ -78,7 +78,6 @@ No error handling configured for [com.jay.wechat.service.WebSocket] and the foll
 java.io.EOFException: null
 
 查找后可能是因为springboot内置tomcat和WebSocket有冲突的原因
-目前该问题尚未解决（但是迟早是会解决滴！）
 
 ## 5.版本控制
 1.0.1：<https://github.com/1185430411/springboot-wechat-order/tree/master/STEP1/wechat>
